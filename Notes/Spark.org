@@ -1,0 +1,37 @@
+* 用 spark 进行数据处理
+
+** 函数式编程
+** 纯函数
+** spark 配方
+- immutable
+- lazy evaluation
+- DAG directed acyclical graph 有向无环图
+
+lamda
+distributed_song_log.map(lambda song: song.lower()).collect()
+
+maps_and_lazy_evaluation
+
+** 数据格式
+
+** SparkSession
+
+** 用 Spark Data Frame 读写数据
+
+#+BEGIN_SRC python
+
+def Demo():
+
+   print("org-mode")
+
+#+END_SRC
+
+** 命令式编程 和 声明式编程
+imperative programming
+declarative programming
+
+#+BEGIN_SRC python
+
+df = df.filter(items = ['col1', 'col2']).groupby().mean() 
+
+#+END_SRC
