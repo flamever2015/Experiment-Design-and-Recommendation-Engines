@@ -14570,6 +14570,22 @@ Name: 241, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>我们使用FunkSVD处理NaN值情况，SVD方法无法处理NaN值。</p>
+</li>
+<li><p>在课程中，用户-项目矩阵由用户评分组成，NaN值表示缺少评分。</p>
+</li>
+<li><p>在本项目中，用户-项目矩阵由1和0组成，NaN值不存在。 这就是为什么传统SVD适合使用的原因。</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>请在此处填写答案。</strong></p>
 <p><code>3.</code> 如何确定潜在特征的数量？这个问题比较难。运行以下单元格后你会发现，随着潜在特征数量的增加，用户-项目矩阵中 1 和 0 值的预测错误率会降低。运行以下单元格，了解当潜在特征的数量增加时，准确率会如何提高。</p>
 
